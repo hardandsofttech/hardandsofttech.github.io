@@ -1,0 +1,41 @@
+{
+  "raceBeforeAdCount": [10,7,5,3],
+  "currentVersion": 1,
+  "cars": [
+    {
+      "price": 0,
+      "multiplierStartPrice": 1000,
+      "multiplierStartValue": 10,
+      "fuelTotal": 5,
+      "isHiden": false
+    },
+    {
+      "price": 12345,
+      "multiplierStartPrice": 20000,
+      "multiplierStartValue": 50,
+      "fuelTotal": 9,
+      "isHiden": false
+    },
+    {
+      "price": 1500000,
+      "multiplierStartPrice": 200000,
+      "multiplierStartValue": 300,
+      "fuelTotal": 12,
+      "isHiden": true
+    },
+    {
+      "price": 20000000,
+      "multiplierStartPrice": 1000000,
+      "multiplierStartValue": 1200,
+      "fuelTotal": 16,
+      "isHiden": true
+    },
+    {
+      "price": 100000000,
+      "multiplierStartPrice": 6000000,
+      "multiplierStartValue": 5000,
+      "fuelTotal": 20,
+      "isHiden": true
+    }
+  ]
+}
