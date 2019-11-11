@@ -9,7 +9,7 @@
 		function gup( message ){ message = message.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]"); var regexS = "[\\?&]"+message+"=([^&#]*)"; var regex = new RegExp( regexS ); var results = regex.exec( window.location.href ); if( results == null ) return ""; else return results[1];}
 	</script>
 	<script>
-  document.title = document.write(gup('message'));
+ window.onload= function() { document.title = document.write(gup('message'));}
 </script>
    <body>
   
