@@ -1,0 +1,127 @@
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+
+	text-transform: uppercase;
+}
+.main-header {
+margin-top: 24px;
+}
+
+.menu {
+margin-top: 24px;
+}
+
+.menu__item  {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.menu__item a {
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.hello{
+	background: url('../img/back.jpg') no-repeat center top;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+    background-attachment: fixed;        
+
+}
+.darkener{
+background: rgba(0, 0, 0, 0.5); 
+
+}
+.title {
+	padding: 300px 0;
+
+}
+
+.title__heading {
+	font-size: 56px;
+	color: #FFFFFF;
+	margin-bottom: -10px;
+	font-weight: 500;
+}
+.title__desc{
+	font-size: 56px;
+	color: #FFFFFF;
+	margin-top: -10px;
+	font-weight: 500;
+}
+
+.title__desc span {
+	font-size: 56px;
+	font-weight: 700;
+	color: #E86811;
+}
+.centerer{
+	margin: auto;
+}
+.description{
+	background: #F0F0F0;
+	border-bottom: 1px solid #EEEEEE;
+	padding: 80px 0;
+	margin: auto;
+}
+.description__title{
+	color: #000000;
+	font-size: 56px;
+	font-weight: 300;
+	text-align: center;
+	margin: auto;
+}
+.description__text{
+	color: #000000;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	margin: auto;
+}
+.screenshots{
+	background: url('../img/back2.jpg') no-repeat center top;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+    background-attachment: fixed;        
+}
+
+.screens{
+	display: block;
+  	
+  	width: 100%;
+  	height: auto;
+}
+.google__play{
+	margin-top: 50px; 
+	display: block;
+  	width: 300px;
+  	height: auto;
+}
+
+.action__title{
+	color: #000000;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	margin: auto;
+	font-size: 56px;
+	font-weight: 300;
+}
+.copyright{
+	color: #000000;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top: 50px; 
+}
