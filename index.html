@@ -19,8 +19,8 @@
                     <nav>
                         <ul class="menu d-flex 
                         justify-content-between">
-                            <li class="menu__item">
-                                <a href="https://play.google.com/store/apps/details?id=com.hast.burningroad">Dpwnload</a>
+                            <li class="menu__item" id="download" >
+                                <a href="https://play.google.com/store/apps/details?id=com.hast.burningroad" >Download</a>
                             </li>
                             <li class="menu__item">
                                 <a href="mailto: hardandsofttech.development@gmail.com">Contact Us</a>
@@ -107,9 +107,30 @@
     </footer>
     <script type="text/javascript">
      
-var myHeaders = new Headers(); // Currently empty
-  alert( myHeaders.get('accept-language') );
-copyright=myHeaders.get('accept-language');
 
+function getLang()
+{
+ if (navigator.languages != undefined) 
+ return navigator.languages[0]; 
+ else 
+ return navigator.language;
+}
+function prepareTexts(String lang){
+    alert(lang);
+    switch(lang) {
+  case 'ru-RU':  // if (x === 'value1')
+    document.getElementById(download).innerHTML="<a href='https://play.google.com/store/apps/details?id=com.hast.burningroad'>Качануть</a>";
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    
+    [break]
+
+  default:
+    
+    [break]
+}
+}
+ prepareTexts( getLang() );
 </script>
 </html>
