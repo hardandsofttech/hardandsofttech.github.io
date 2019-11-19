@@ -19,14 +19,14 @@
                     <nav>
                         <ul class="menu d-flex 
                         justify-content-between">
-                            <li class="menu__item" id="download" >
-                                <a href="https://play.google.com/store/apps/details?id=com.hast.burningroad" >Download</a>
+                            <li class="menu__item"  >
+                                <a href="https://play.google.com/store/apps/details?id=com.hast.burningroad"id="download" >Download</a>
                             </li>
                             <li class="menu__item">
-                                <a href="mailto: hardandsofttech.development@gmail.com">Contact Us</a>
+                                <a href="mailto: hardandsofttech.development@gmail.com" id="contacts">Contact Us</a>
                             </li>
                             <li class="menu__item">
-                                <a href="https://hardandsofttech.github.io/PrivacyPolicy.html">Privacy Policy</a>
+                                <a href="https://hardandsofttech.github.io/PrivacyPolicy.html" id="policy">Privacy Policy</a>
                             </li>
                         </ul>
                     </nav>
@@ -41,7 +41,7 @@
               <div class="row">
                 <div class="col-lg-12 centerer">
                     <div class="title">
-                        <h1 class="title__heading">
+                        <h1 class="title__heading" id="title__heading">
                             Let us introduce,
                         </h1>
                         <h1 class="title__desc">
@@ -59,10 +59,10 @@
             <div class="row">
 
                 <div class="col-lg-9 centerer">
-                    <div class="description__title">
+                    <div class="description__title" id="description__title">
                         Just a fun clicker.
                     </div>
-                    <div class="description__text">
+                    <div class="description__text" id="description__text">
                         This game was initially intended to be easy it's main purpose is to kill time and releave your mind from the current problems.
                 </div>
             </div>
@@ -80,7 +80,7 @@
             <div class="row">
 
                 <div class="col-lg-9 centerer">
-                    <div class="action__title">
+                    <div class="action__title" id="action__title">
                       Dive into our world right now!
                     </div>
             </div>
@@ -115,22 +115,29 @@ function getLang()
  else 
  return navigator.language;
 }
-function prepareTexts(String lang){
-    alert(lang);
-    switch(lang) {
-  case 'ru-RU':  // if (x === 'value1')
-    document.getElementById(download).innerHTML="<a href='https://play.google.com/store/apps/details?id=com.hast.burningroad'>Качануть</a>";
-    [break]
 
-  case 'value2':  // if (x === 'value2')
-    
-    [break]
+window.onload = function()
+{
+ var lang = getLang();
+ if (lang.includes("ru")) {
+document.getElementById("download").innerHTML = "Скачать";    
+document.getElementById("contacts").innerHTML = "Связаться";
+document.getElementById("policy").innerHTML = "Политика конфиденциальности";
+document.getElementById("title__heading").innerHTML = "Разрешите представить,";
+document.getElementById("description__title").innerHTML = "Просто прикольный кликер";
+document.getElementById("description__text").innerHTML = "Эта игра изначально не должна была быть сложной, это просто способ убить время. Мы специально избегали сложного геймплея, Просто получай удовольствия освобождая мозги от насущных проблем.";
+document.getElementById("action__title").innerHTML = "Погрузись в наш мир прямо сейчас!";
 
-  default:
-    
-    [break]
+
+
+ }
+
+
+// prepareTexts( getLang() );
+
 }
-}
- prepareTexts( getLang() );
+
+
+
 </script>
 </html>
